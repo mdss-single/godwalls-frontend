@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<title>Godwall</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
+	<link rel="stylesheet" href="css/dropzone.css">
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.awesomeCloud.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/dropzone.js"></script>
+	<script src="js/custom.js"></script>
+</head>
+<body>
+<div class="wrap">
+	<header class="header">
+		<div class="container">
+			<a href="#" class="head-logo">godwalls</a>
+			<nav class="header-nav">
+				<ul>
+					<li><a href="#" class="header-nav-random">random</a></li>
+					<li><a href="#" class="header-nav-toplist">toplist</a></li>
+					<li><a href="#" class="header-nav-latest">latest</a></li>
+					<li><a href="#" class="header-nav-upload">upload</a></li>
+				</ul>
+			</nav>
+			<div class="header-account">
+				<a href="#" class="header-account-avatar"><img src="i/header-avatar.jpg" alt="sieghardt"></a>
+				<a href="#" class="header-account-name">Hello, <span>sieghardt</span></a>
+				<a href="#" class="header-account-incoming">361</a>
+				<ul class="header-account-drop">
+					<li>
+						<div class="cf">
+							<span class="header-account-downloads">345</span>
+							<span class="header-account-likes">6678</span>
+							<span class="header-account-views">31568</span>
+						</div>
+						<div>
+							<a href="#">my profile</a>
+							<a href="#">edit profile</a>
+						</div>
+					</li>
+					<li>
+						<p class="header-account-drop-wallpapers">Wallpapers</p>
+						<div>
+							<a href="#">favorites</a>
+							<a href="#">subscribtions</a>
+							<a href="#">uploads</a>
+						</div>
+					</li>
+					<li>
+						<p class="header-account-drop-settings">Settings</p>
+						<div>
+							<a href="#">browsing</a>
+							<a href="#">privacy</a>
+							<a href="#">account</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="container cf">
+		<aside class="wallpaper-side">
+			<div class="wallpaper-side-section wallpaper-side-section-btns center">
+				<button type="button" class="btn btn-purple btn-favorites"><span class="icon icon-heart"></span> add to favorites</button>
+				<button class="btn btn-green"><span class="icon icon-down"></span> i wanna picture</button>
+				<ul class="wallpaper-side-section-fav-drop">
+					<li><a href="#"><span class="icon icon-lock"></span>Private gallery</a></li>
+					<li><a href="#"><span class="icon icon-folder"></span>public gallery</a></li>
+					<li><a href="#"><span class="icon icon-plus"></span>add to collection</a></li>
+				</ul>
+			</div>
+			<div class="wallpaper-side-section wallpaper-side-section-download center">
+				<p class="wallpaper-side-section-title wallpaper-side-section-title-resolution">Resolution</p>
+				<select name="" id="" class="select wallpaper-side-section-download-select" data-placeholder="Resolution">
+					<option value="">1024*768</option>
+					<option value="">1280*1024</option>
+				</select>
+				<button class="btn btn-lightgreen btn-wallpaper-download" disabled><span class="icon icon-download"></span>download</button>
+			</div>
+			<div class="wallpaper-side-section">
+				<p class="wallpaper-side-section-title wallpaper-side-section-title-share">Share</p>
+				<ul class="wallpaper-side-section-share">
+					<li><a href="#"><span class="socicon socicon-odnoklassniki"></span></a></li>
+					<li><a href="#"><span class="socicon socicon-vkontakte"></span></a></li>
+					<li><a href="#"><span class="socicon socicon-facebook"></span></a></li>
+					<li><a href="#"><span class="socicon socicon-twitter"></span></a></li>
+				</ul>
+				<div class="wallpaper-side-section-get-link">
+					<ul class="wallpaper-side-section-get-link-type cf">
+						<li class="wallpaper-side-section-get-link-type-active">Direct link</li>
+						<li>BB html</li>
+						<li>Preview link</li>
+					</ul>
+					<div class="wallpaper-side-section-get-link-box wallpaper-side-section-get-link-box-active">
+						<input type="text" name="" id="wallpaper-code-one" class="input-text wallpaper-side-section-share-text" value="http://godwalls.com/38454" disabled>
+						<button class="wallpaper-side-section-share-btn" onclick="copyToClipboard('#wallpaper-code-one')">Copy</button>
+					</div>
+					<div class="wallpaper-side-section-get-link-box">
+						<input type="text" name="" id="wallpaper-code-two" class="input-text wallpaper-side-section-share-text" value="[img]http://godwalls.com/38454[/img]" disabled>
+						<button class="wallpaper-side-section-share-btn" onclick="copyToClipboard('#wallpaper-code-two')">Copy</button>
+					</div>
+					<div class="wallpaper-side-section-get-link-box">
+						<input type="text" name="" id="wallpaper-code-three" class="input-text wallpaper-side-section-share-text" value="http://godwalls.com/preview/38454" disabled>
+						<button class="wallpaper-side-section-share-btn" onclick="copyToClipboard('#wallpaper-code-three')">Copy</button>
+					</div>
+				</div>
+			</div>
+			<div class="wallpaper-side-section wallpaper-side-section-properties">
+				<p class="wallpaper-side-section-title wallpaper-side-section-title-properties">Properties</p>
+				<table class="wallpaper-side-section-properties-table">
+					<tr>
+						<td>Upload by</td>
+						<td><a href="#" class="wallpaper-side-section-properties-name">serejapidr</a></td>
+					</tr>
+					<tr>
+						<td>Size</td>
+						<td>400kb</td>
+					</tr>
+					<tr>
+						<td>Category</td>
+						<td><a href="#" class="wallpaper-side-section-properties-category">Asian</a></td>
+					</tr>
+					<tr>
+						<td>Favorites</td>
+						<td>458</td>
+					</tr>
+					<tr>
+						<td>Views</td>
+						<td>1983</td>
+					</tr>
+					<tr>
+						<td>Add</td>
+						<td>10 monts ago</td>
+					</tr>
+					<tr>
+						<td>Source</td>
+						<td>
+							Unknown
+							<a href="#" class="wallpaper-side-section-properties-source-link right"></a>
+						</td>
+					</tr>
+				</table>
+				<form action="">
+					<div class="wallpaper-side-section-properties-source">
+						<p class="wallpaper-side-section-properties-source-title">Create a source</p>
+						<p class="wallpaper-side-section-properties-source-descr">Please, provide a link to their artist’s page, not some other image hosting site</p>
+						<input type="text" name="" id="" class="input-text" placeholder="Enter link to source">
+						<button class="btn btn-gray">done</button>
+					</div>
+				</form>
+			</div>
+			<div class="wallpaper-side-section center">
+				<button class="wallpaper-side-section-btn-report">report this image</button>
+			</div>
+		</aside>
+		<div class="wallpaper cfm">
+			<p class="search-result-related">Related tags: <a href="#" class="search-result-tag-12">woman</a> <a href="#" class="search-result-tag-18">porn</a> <a href="#" class="search-result-tag-18">adult</a></p>
+			<div class="wallpaper-tag-new">
+				<input type="text" name="" id="" class="input-text" placeholder="Enter new tag here">
+				<button class="wallpaper-tag-new-btn"><span>+</span></button>
+			</div>
+			<div class="wallpaper-image">
+				<img src="i/wallpaper-big.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="empty"></div>
+</div>
+<footer class="footer">
+	<div class="footer-container">
+		<ul class="footer-social">
+			<li><a href="#"><span class="socicon socicon-odnoklassniki"></span></a></li>
+			<li><a href="#"><span class="socicon socicon-vkontakte"></span></a></li>
+			<li><a href="#"><span class="socicon socicon-facebook"></span></a></li>
+			<li><a href="#"><span class="socicon socicon-twitter"></span></a></li>
+		</ul>
+		<ul class="footer-nav">
+			<li><a href="#">tags</a></li>
+			<li><a href="#">about</a></li>
+			<li><a href="#">faq</a></li>
+			<li><a href="#">rules</a></li>
+			<li><a href="#">team</a></li>
+			<li><a href="#">contact</a></li>
+		</ul>
+		<p class="footer-copyright">All images remain property of their original owners. Site & code © <a href="#">wallhaven.cc</a> 2015.</p>
+	</div>
+</footer>
+</body>
+</html>

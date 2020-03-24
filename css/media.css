@@ -1,0 +1,32 @@
+@media screen and (max-width: 1280px) {
+	.auth-link {
+		right:-100px;
+	}
+	.search-result-pic {
+		width:33.33%;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.auth-link {
+		right:-30px;
+	}
+	.homepage-about {
+		margin:50px -50px 0 -50px;
+	}
+	.homepage-tags {
+		margin:35px -50px 35px -55px;
+		box-sizing:border-box;
+	}
+	.head-logo {
+		margin:0 20px 0 10px;
+	}
+	.header-nav li {
+		padding:0 20px;
+	}
+	.search-filter-text {
+		width:20%;
+	}
+	.user-page-grid .search-result-pic {
+		width:50%;
+	}
+}
